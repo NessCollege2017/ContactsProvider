@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
             requestContactsPermission();
             return;
         }
+
+        ContactsDataSource.getContacts(this/*context*/);
     }
 
     @Override
